@@ -1,0 +1,28 @@
+[package]
+name    = "rpim_1d"
+version = "0.1.0"
+edition = "2021"
+authors = ["ElectroniX / HxH Society"]
+license = "MIT"
+description = "Educational 1D RPIM thermal-conduction solver with analytical validation."
+readme = "README.md"
+publish = false
+
+# This project is intentionally OUTSIDE the ElectroniX Cargo workspace.
+# The empty `[workspace]` table below tells cargo "I am my own workspace" —
+# so a developer can clone just this folder and run `cargo build` without
+# needing the rest of the ElectroniX repo. It also stops cargo from walking
+# upward and attaching to the main ElectroniX workspace by accident.
+[workspace]
+
+[dependencies]
+nalgebra = "0.33"
+
+# Default target: `cargo run` runs the demo that prints a validation table.
+[[bin]]
+name = "rpim_1d_demo"
+path = "src/main.rs"
+
+[lib]
+name = "rpim_1d"
+path = "src/lib.rs"
