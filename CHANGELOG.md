@@ -11,6 +11,18 @@ Versioning: [Semantic Versioning](https://semver.org/)
 
 ---
 
+## [0.1.4] — 2026-10-14
+
+### Added
+- Standalone 1D RPIM thermal solver with analytical validation (`validation/rpim_1d`).
+- Project README covering the ECAD parser, RPIM meshing, thermal and fatigue solvers.
+- `run_electronix.bat` to build all components and launch the app.
+
+### Notes
+- No application code changes since 0.1.3; installers are functionally identical.
+
+---
+
 ## [0.1.3] — 2026-05-08
 
 ### Fixed
