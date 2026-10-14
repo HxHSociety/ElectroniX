@@ -6,4 +6,10 @@ members = [
     "rpim_solver",
     "src-tauri",
 ]
+# Standalone educational projects that must NOT inherit the workspace resolver,
+# toolchain, or dependencies — they ship as independent `cargo run` targets so
+# new developers can read, build, and run them without touching ElectroniX.
+exclude = [
+    "validation/rpim_1d",
+]
 resolver = "2"
