@@ -1,0 +1,8 @@
+out/
+tests/
+examples/
+__pycache__/
+*.pyc
+.git
+README.md
+nf_uq.csv
